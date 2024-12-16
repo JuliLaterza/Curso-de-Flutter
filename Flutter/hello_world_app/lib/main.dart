@@ -1,20 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world_app/presentation/screens/counter_screen.dart'; //Vienen muchos widgets
+
 
 void main() {
-  runApp(const MainApp());
+  //Widget PRINCIPAL, INICIAL  
+  runApp( const MyApp() );
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return MaterialApp(
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: Colors.amber
       ),
+      debugShowCheckedModeBanner: false,
+      home: const CounterScreen()
     );
   }
+
 }
