@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorSchemeSeed: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const Counter_Functions_Screen()
+      home: const CounterFunctionsScreen()
     );
   }
 
