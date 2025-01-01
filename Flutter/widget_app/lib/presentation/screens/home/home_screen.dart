@@ -38,6 +38,7 @@ class _HomeView extends StatelessWidget {
           subtitle: Text(menuItem.subTitle),
           onTap: () {
             // navegar a otra pantalla
+            Navigator.pushNamed(context, menuItem.link);
           },
         );
       }
